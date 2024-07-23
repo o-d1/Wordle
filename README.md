@@ -1,2 +1,2 @@
 # Wordle
-wordle
+Somehting like wordle for a guesser thing
