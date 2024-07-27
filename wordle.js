@@ -13,11 +13,13 @@ function enterFunction () {
     if (userInput.join("") === correctLetters.join("")) {
         console.log("You are correct");
     } else {
-        let inputElements = document.getElementsByClassName('inputbox')
+//        let inputElements = document.querySelectorAll('.input-row input')
         userInput.forEach(function(letter, index) { 
             if (correctLetters.includes(letter)) {
                 console.log(letter + " is correct");
-                document.inputElements.style.backgroundColor = "green";
+//                inputElements.style.backgroundColor = "green";
+            }  else if(letter > 1) {
+                console.log(letter + " are correct")
             }
         });
     }
